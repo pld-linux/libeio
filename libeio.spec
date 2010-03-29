@@ -64,7 +64,7 @@ Statyczna biblioteka libeio.
 
 # override -O3 which overrides our optflags in configure
 %{__make} \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -D_GNU_SOURCE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
