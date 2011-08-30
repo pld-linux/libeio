@@ -21,10 +21,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Libeio is a full-featured asynchronous I/O library for C, modelled in
-similar style and spirit as libev. Features include: asynchronous read,
-write, open, close, stat, unlink, fdatasync, mknod, readdir etc. (basically
-the full POSIX API). sendfile (native on solaris, linux, hp-ux, freebsd,
-emulated everywehere else), readahead (emulated where not available).
+similar style and spirit as libev. Features include: asynchronous
+read, write, open, close, stat, unlink, fdatasync, mknod, readdir etc.
+(basically the full POSIX API). sendfile (native on solaris, linux,
+hp-ux, freebsd, emulated everywehere else), readahead (emulated where
+not available).
 
 %package devel
 Summary:	Header files for libeio library
