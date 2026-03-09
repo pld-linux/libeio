@@ -1,0 +1,10 @@
+--- libeio/eio.c.orig	2010-03-11 16:44:07.000000000 +0100
++++ libeio/eio.c	2026-03-10 14:45:00.000000000 +0100
+@@ -47,6 +47,7 @@
+ #include <errno.h>
+ #include <stddef.h>
+ #include <stdlib.h>
++#include <stdio.h>
+ #include <string.h>
+ #include <errno.h>
+ #include <sys/types.h>

@@ -5,13 +5,14 @@
 Summary:	libeio - an asynchronous I/O library
 Name:		libeio
 Version:	1.0
-Release:	1
+Release:	2
 License:	BSD or GPL v2+
 Group:		Libraries
 Source0:	%{name}-20100311.tar.bz2
 # Source0-md5:	a3b50842b683b3dfd17af57db767e484
 # cvs -z3 -d :pserver:anonymous@cvs.schmorp.de/schmorpforge co libeio
-URL:		http://software.schmorp.de/pkg/libeio
+URL:		https://software.schmorp.de/pkg/libeio
+Patch0:		missing-rename-declaration.patch
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 # inotify interface
@@ -53,6 +54,7 @@ Statyczna biblioteka libeio.
 
 %prep
 %setup -q -n %{name}
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
